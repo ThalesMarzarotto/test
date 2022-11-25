@@ -1,0 +1,168 @@
+
+.Login{ 
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f2f5;
+    color:black;
+    width: 100vw;   
+    justify-content: center;
+}
+
+
+.loginWraper{    
+    display: flex;   
+    flex-direction: column;
+    flex:0.5; 
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px 300px 50px;
+
+
+}
+
+.login__wrappertitle{
+    font-size: 30px;
+    font-family: Dancing;
+}
+.loginMain{  
+    background-color: white;
+    justify-content: center;
+    border: 1px solid rgb(146, 146, 146); 
+    box-shadow:  0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.loginMain>*{ 
+    padding: 10px;
+}
+
+.login__title{ 
+    font-size: 40px;
+}
+
+.login__inputs{ 
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+}
+
+.login__inputs>*{ 
+      margin-bottom: 10px;
+    
+}
+
+.login__input{ 
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    height: 25px;   
+    border-radius: 5px;
+    border: 1px solid rgb(110, 110, 110);
+    
+}
+
+.login__input>input{ 
+   width: 100%;
+   border: none;
+    outline: none;
+}
+
+
+.login__title{ 
+    display: table-cell; 
+    vertical-align: middle;
+    text-align: center;
+}
+
+.login__submitbutton>p{ 
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    background-color:rgb(26, 26, 26);
+    color: white;
+    font-size: 20px;   
+}
+
+
+
+.forgottenMain{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+.login__lines{     
+    overflow: hidden;             
+    display: block;   
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;  
+    align-items: center;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;   
+    padding: 0;
+}
+
+.login__line{
+ 
+    position: relative;
+    display: inline-block;
+    text-align: start;
+    padding: 4px;
+    color: rgb(94, 94, 94);
+    width: auto;
+  
+}
+
+.login__line::before{
+    content: '';
+    height: 1px;
+    background-color:rgb(185, 185, 185);
+    position: absolute;
+    top: 50%;
+    width: 9999px; 
+    right: 100%;
+   
+}
+
+.login__line::after{
+    content: '';
+    height: 1px;
+    background-color:rgb(185, 185, 185);
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    left: 100%;
+ 
+
+}
+
+
+@media (max-width: 350px){
+
+
+
+
+    .login__submitbutton>p{ 
+              width: 90vw;     
+       
+    }
+    
+
+    .login__inputs{ 
+       
+        width: 90vw;
+        
+    }
+
+}
